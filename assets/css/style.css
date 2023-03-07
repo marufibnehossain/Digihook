@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: "avertastd-bold";
+    src: url(../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "avertastd-semibold";
+    src: url(../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "avertastd-regular";
+    src: url(../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Regular.ttf) format('truetype');
+}
+
+
+.bg-color{
+    background: -webkit-linear-gradient( 0deg,rgb(31 182 255/10%) 4%,rgb(177 109 246/10%) 95%);
+}
+.font-avbold{
+    font-family: 'avertastd-bold';
+}
+.font-avreg{
+    font-family: 'avertastd-regular';
+}
+.font-avsemi{
+    font-family: 'avertastd-semibold';
+}
+
+
+  
+.product #product-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    background: white;
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  .product #product-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 1px solid #fff;
+  }
+  .product #product-flters li:hover, .product #product-flters li.filter-active {
+    color: #4154f1;
+    border-color: #4154f1;
+  }
+  .product #product-flters li:last-child {
+    margin-right: 0;
+  }
+  .product .product-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.749);
+  }
+  .product .product-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  .product .product-wrap img {
+    transition: 1s;
+  }
+  .product .product-wrap .product-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product .product-wrap .product-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid rgba(1, 41, 112, 0.2);
+    border-left: 3px solid rgba(1, 41, 112, 0.2);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  .product .product-wrap .product-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid rgba(1, 41, 112, 0.2);
+    border-right: 3px solid rgba(1, 41, 112, 0.2);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  .product .product-wrap .product-info h4 {
+    font-size: 20px;
+    color: #012970;
+    font-weight: 700;
+  }
+  .product .product-wrap .product-info p {
+    color: #012970;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  .product .product-wrap .product-links {
+    text-align: center;
+    z-index: 4;
+  }
+  .product .product-wrap .product-links a {
+    color: #fff;
+    background: #4154f1;
+    margin: 10px 2px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .product .product-wrap .product-links a i {
+    font-size: 24px;
+    line-height: 0;
+  }
+  .product .product-wrap .product-links a:hover {
+    background: #5969f3;
+  }
+  .product .product-wrap:hover img {
+    transform: scale(1.1);
+  }
+  .product .product-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  .product .product-wrap:hover .product-info {
+    opacity: 1;
+  }
+  .product .product-wrap:hover .product-info::before {
+    top: 15px;
+    left: 15px;
+  }
+  .product .product-wrap:hover .product-info::after {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  #portfolio{
+    background: linear-gradient(155deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(230,224,250,1) 53%,rgba(255,255,255,1) 53%,rgba(230,224,250,1) 87%,rgba(255,255,255,1) 87%,rgba(255,255,255,1) 92%,rgba(255,255,255,1) 100%);
+    background-size: cover;
+    padding: 1% 0 10%;
+    margin-top: 5%;
+  }
+
+  #clients .clients-slider img{
+    height: 50px;
+    width: auto;
+    object-fit: scale-down;
+}
+.clients .clients-slider .swiper-slide img {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  .clients .clients-slider .swiper-slide img:hover {
+    opacity: 1;
+  }
+  .clients .clients-slider .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+  }
+  .clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #2443AC;
+  }
+  .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #2443AC;
+  }
