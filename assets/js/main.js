@@ -1,12 +1,22 @@
 window.onscroll = function (){scroll()};
 function scroll(){
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+    if(document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
         // document.getElementById("navbar").style.height = "12vh";
-        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0.534)";;
+        document.getElementById("navbar").style.backgroundColor = "rgb(255, 255, 255)";
+        document.getElementById("light").style.display = "none";
+        document.getElementById("dark").style.display = "block";
+        document.getElementById("textclr").style.color = "rgb(30, 41, 59)";
+        document.getElementById("textclr1").style.color = "rgb(30, 41, 59)";
+        document.getElementById("textclr2").style.color = "rgb(30, 41, 59)";
     }
     else{
         // document.getElementById("navbar").style.height = "17vh";
         document.getElementById("navbar").style.backgroundColor = "transparent";
+        document.getElementById("light").style.display = "block";
+        document.getElementById("dark").style.display = "none";
+        document.getElementById("textclr").style.color = "rgb(226, 232, 240)";
+        document.getElementById("textclr1").style.color = "rgb(226, 232, 240)";
+        document.getElementById("textclr2").style.color = "rgb(226, 232, 240)";
     }
 
 }

@@ -26,7 +26,12 @@
 .font-avsemi{
     font-family: 'avertastd-semibold';
 }
-
+#light{
+  display: block;
+}
+#dark{
+  display: none;
+}
 
   
 .product #product-flters {
@@ -49,7 +54,7 @@
     margin: 0 4px 8px 4px;
     transition: 0.3s;
     border-radius: 50px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
   }
   .product #product-flters li:hover, .product #product-flters li.filter-active {
     color: #4154f1;
